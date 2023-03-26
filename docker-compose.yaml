@@ -16,7 +16,7 @@ services:
       - mq_redis
     restart: always
   #  entrypoint: ["python", "/app/app.py"]
-    entrypoint: ["bash", "/app/start.sh"]
+    entrypoint: ["sh", "/app/start.sh"]
 
   mq_redis:
     image: redis:alpine3.17

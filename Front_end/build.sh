@@ -8,7 +8,7 @@
 # Args :
 #
 # Creation Date : 05-12-2022
-# Last Modified : 25-03-23 13:32:55S
+# Last Modified : 26-03-23 23:53:00S
 #
 # Created By :
 # Email : nbmaiti83@gmail.com
@@ -38,7 +38,7 @@ fi
 
 #~/bin/docker-window.sh run -it --rm -v "$PWD":'/app2' -w //app --name node-build node:gallium-bullseye bash
 #$DOCKERCMD run -it --rm -v "$PWD":'/app2' -w //app --name node-build node:gallium-bullseye bash
-$DOCKERCMD run -it --rm -v "$PWD":/app -w //app --name node-build node:gallium-bullseye npm install
-$DOCKERCMD run -it --rm -v "$PWD":/app -w //app --name node-build node:gallium-bullseye npm run build
+$DOCKERCMD run -it --rm -v "$PWD":/app -w //app --name node-build node:gallium-bullseye yarn install
+$DOCKERCMD run -it --rm -v "$PWD":/app -w //app --name node-build node:gallium-bullseye yarn run build
 
 #docker image rm node:gallium-bullseye

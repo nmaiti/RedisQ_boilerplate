@@ -129,8 +129,8 @@ def zip_and_download():
 
     folder_path = only_folder
     folder_name  = os.path.basename(only_folder)
-    zip_path = folder_name + '.zip'
-    with zipfile.ZipFile(zip_path, 'w', compression=zipfile.ZIP_DEFLATED) as zip_file:
+    zip_path = '/uploads/'+folder_name + '.zip'
+    with zipfile.ZipFile( zip_path, 'w', compression=zipfile.ZIP_DEFLATED) as zip_file:
         for root, dirs, files in os.walk(folder_path):
             for file in files:
                 zip_file.write(os.path.join(root, file))
