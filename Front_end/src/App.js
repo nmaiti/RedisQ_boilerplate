@@ -7,7 +7,7 @@ import {STREAM_URL} from "./config"
 
 
 const HeroBannerContainer = styled.div`
-  background-color: ##0e245c;
+  background-color: #0e245c;
   height: 140px;
   display: flex;
   justify-content: center;
