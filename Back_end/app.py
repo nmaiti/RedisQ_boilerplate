@@ -28,7 +28,7 @@ CORS(app, resource={
 
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-REDIS_HOST = '192.168.7.104'
+REDIS_HOST = 'mq_redis'
 REDIS_PORT = 6379
 
 

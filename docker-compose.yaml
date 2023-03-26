@@ -11,7 +11,7 @@ services:
       - "${PWD}/Back_end:/app"
     working_dir: /app
     ports:
-      - "5003:5000"
+      - "5004:5000"
     depends_on:
       - mq_redis
     restart: always
@@ -21,7 +21,7 @@ services:
   mq_redis:
     image: redis:alpine3.17
     ports:
-      - "6379:6379"
+      - "6378:6379"
     restart: always
 
 

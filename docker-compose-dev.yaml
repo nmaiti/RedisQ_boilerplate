@@ -11,12 +11,12 @@ services:
       - "${PWD}/Back_end:/app"
     working_dir: /app
     ports:
-      - "5003:5000"
+      - "5004:5000"
     depends_on:
       - mq_redis
         #entrypoint: ["python", "/app/app.py"]
     entrypoint: ["bash", "/app/start.sh"]
- 
+
   mq_frontend:
     image: node:gallium-bullseye
     #image: nbmaiti/node-front_alpine_prod
@@ -37,7 +37,7 @@ services:
   mq_redis:
     image: redis:alpine3.16
     ports:
-      - "6379:6379"
+      - "6378:6379"
     restart: always
 
 

@@ -2,7 +2,7 @@ import time
 from redis import Redis
 from rq import Worker, Queue, Connection
 
-REDIS_HOST = '192.168.7.104'
+REDIS_HOST = 'mq_redis'
 REDIS_PORT = 6379
 redis_conn = Redis(host=REDIS_HOST, port=REDIS_PORT)
 listen = ['default']
