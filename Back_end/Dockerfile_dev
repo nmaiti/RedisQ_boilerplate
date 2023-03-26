@@ -1,0 +1,11 @@
+FROM python:3
+
+COPY . /app
+WORKDIR /app
+
+RUN chmod +x /app/start.sh
+
+RUN pip install --no-cache-dir -r requirements.txt
+RUN pwd && ls 
+
+#CMD [ "python", "./app:WORKDIR.py"]
